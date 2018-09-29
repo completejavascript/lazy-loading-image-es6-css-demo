@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8edec;
+  color: #222;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+}
+
+.app {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app .title {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.app .grid {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.app .grid .cell {
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #fff;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.app .grid .cell:hover {
+  transform: scale(1.01);
+}
+
+.app .grid .cell .caption {
+  text-transform: uppercase;
+}
+
+.app .grid .cell .lazy-image {
+  background-image: url("images/place-holder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 66.64%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .app .grid .cell {
+    display: block;
+    -webkit-box-flex: 1;
+    flex: 1 1 calc(50% - 1.5rem);
+    width: 50%;
+    margin: 0.5rem;
+  }
+}
+
+.app .grid .cell .lazy-image.visible { opacity: 1; }
+#image-01.visible { background-image: url("images/01.jpg"); }
+#image-02.visible { background-image: url("images/02.jpg"); }
+#image-03.visible { background-image: url("images/03.jpg"); }
+#image-04.visible { background-image: url("images/04.jpg"); }
+#image-05.visible { background-image: url("images/05.jpg"); }
+#image-06.visible { background-image: url("images/06.jpg"); }
+#image-07.visible { background-image: url("images/07.jpg"); }
+#image-08.visible { background-image: url("images/08.jpg"); }
+#image-09.visible { background-image: url("images/09.jpg"); }
+#image-10.visible { background-image: url("images/10.jpg"); }
+#image-11.visible { background-image: url("images/11.jpg"); }
+#image-12.visible { background-image: url("images/12.jpg"); }
+#image-13.visible { background-image: url("images/13.jpg"); }
+#image-14.visible { background-image: url("images/14.jpg"); }
+#image-15.visible { background-image: url("images/15.jpg"); }
+#image-16.visible { background-image: url("images/16.jpg"); }
+#image-17.visible { background-image: url("images/17.jpg"); }
+#image-18.visible { background-image: url("images/18.jpg"); }
